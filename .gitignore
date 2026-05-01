@@ -1,0 +1,13 @@
+# Squarespace JS/CSS bundles — useless for our purposes
+*.download
+assets-raw/**/*.css
+assets-raw/**/*.js
+assets-raw/*_files/*.css
+assets-raw/*_files/*.js
+
+# Derived script output
+scripts/copy.json
+
+# OS
+.DS_Store
+Thumbs.db

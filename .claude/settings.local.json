@@ -1,0 +1,10 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(python scripts/extract_copy.py)",
+      "WebFetch(domain:www.sparksot.com)",
+      "Bash(python scripts/copy_assets.py)",
+      "Bash(python -c ' *)"
+    ]
+  }
+}

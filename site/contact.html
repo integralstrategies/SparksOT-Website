@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contact — Sparks Occupational Therapy</title>
+  <meta name="description" content="Get in touch with Sparks OT to book a free consultation. We're located at 3015 47th Street Suite E4, Boulder, CO 80301.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;1,400;1,500&family=DM+Sans:ital,opsz,wght@0,9..40,300;0,9..40,400;0,9..40,500;1,9..40,400&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="assets/css/styles.css">
+</head>
+<body>
+
+  <a class="skip-link" href="#main">Skip to content</a>
+
+  <!-- ---- Header -------------------------------------------- -->
+  <header class="site-header" id="site-header">
+    <div class="header-inner">
+      <a href="index.html" class="logo-link" aria-label="Sparks Occupational Therapy — Home">
+        <img src="assets/logo/logo.png" alt="Sparks Occupational Therapy" class="logo">
+      </a>
+      <nav class="site-nav" aria-label="Main navigation">
+        <button class="nav-toggle" aria-expanded="false" aria-controls="nav-menu" aria-label="Open menu">
+          <span class="hamburger" aria-hidden="true"></span>
+        </button>
+        <ul class="nav-list" id="nav-menu" role="list">
+          <li><a href="index.html" class="nav-link">Home</a></li>
+          <li><a href="team.html" class="nav-link">Team</a></li>
+          <li><a href="contact.html" class="nav-link nav-cta">Contact</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <!-- ---- Main ---------------------------------------------- -->
+  <main id="main">
+
+    <!-- Page hero -->
+    <div class="page-hero">
+      <div class="container">
+        <p class="eyebrow" style="color: var(--green-light);">We'd love to hear from you</p>
+        <h1>Contact us.</h1>
+        <p>Reach out to book a free consultation or ask any questions about our services.</p>
+      </div>
+    </div>
+
+    <!-- Contact content -->
+    <section class="section contact-section" aria-label="Contact information and form">
+      <div class="container contact-grid">
+
+        <!-- Info column -->
+        <div class="contact-info-col" data-reveal>
+          <h2>Get in touch</h2>
+
+          <div class="contact-detail">
+            <p class="contact-detail-label">Email</p>
+            <a href="mailto:korrie@sparksot.com">korrie@sparksot.com</a>
+          </div>
+
+          <div class="contact-detail">
+            <p class="contact-detail-label">Address</p>
+            <p>
+              3015 47th Street, Suite E4<br>
+              Boulder, CO 80301
+            </p>
+          </div>
+
+          <div class="contact-detail">
+            <p class="contact-detail-label">Consultation</p>
+            <p>We offer a free initial consultation to learn about your child's needs and how we might help.</p>
+          </div>
+
+          <p class="contact-note">
+            We typically respond within one business day. For urgent matters, please email us directly at
+            <a href="mailto:korrie@sparksot.com">korrie@sparksot.com</a>.
+          </p>
+        </div>
+
+        <!-- Form column -->
+        <div class="contact-form-col" data-reveal data-delay="2">
+          <form
+            id="contact-form"
+            class="contact-form"
+            action="https://formspree.io/f/REPLACE_WITH_FORM_ID"
+            method="POST"
+            novalidate
+          >
+            <div class="form-row">
+              <div class="form-group">
+                <label for="first-name">First name <span aria-hidden="true">*</span></label>
+                <input
+                  type="text"
+                  id="first-name"
+                  name="first_name"
+                  autocomplete="given-name"
+                  required
+                  aria-required="true"
+                >
+              </div>
+              <div class="form-group">
+                <label for="last-name">Last name <span aria-hidden="true">*</span></label>
+                <input
+                  type="text"
+                  id="last-name"
+                  name="last_name"
+                  autocomplete="family-name"
+                  required
+                  aria-required="true"
+                >
+              </div>
+            </div>
+
+            <div class="form-group">
+              <label for="email">Email address <span aria-hidden="true">*</span></label>
+              <input
+                type="email"
+                id="email"
+                name="email"
+                autocomplete="email"
+                required
+                aria-required="true"
+              >
+            </div>
+
+            <div class="form-group">
+              <label for="message">Message <span aria-hidden="true">*</span></label>
+              <textarea
+                id="message"
+                name="message"
+                rows="6"
+                required
+                aria-required="true"
+                placeholder="Tell us a bit about your child and what brings you here…"
+              ></textarea>
+            </div>
+
+            <!-- Honeypot — hidden from real users, catches bots -->
+            <input type="text" name="_gotcha" style="display:none" tabindex="-1" autocomplete="off">
+
+            <div id="form-status" class="form-status" role="status" aria-live="polite"></div>
+
+            <button type="submit" class="btn btn-sand btn-lg form-submit">Send message</button>
+          </form>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- Map / address strip -->
+    <section class="cta-strip" style="background: var(--green-dark);" data-reveal aria-label="Location">
+      <div class="container cta-strip-inner">
+        <div class="cta-strip-text">
+          <p style="font-size: clamp(1.25rem, 2.5vw, 1.75rem);">Find us in South Boulder</p>
+          <address style="font-style: normal; color: rgba(255,255,255,.8); font-size: 1rem; line-height: 1.7;">
+            3015 47th Street, Suite E4<br>
+            Boulder, CO 80301
+          </address>
+        </div>
+        <a
+          href="https://maps.google.com/?q=3015+47th+Street+Suite+E4+Boulder+CO+80301"
+          target="_blank"
+          rel="noopener noreferrer"
+          class="btn btn-ghost"
+          aria-label="Get directions to Sparks OT on Google Maps (opens in new tab)"
+        >
+          Get directions
+        </a>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- ---- Footer -------------------------------------------- -->
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <a href="index.html" aria-label="Sparks OT — Home">
+        <img src="assets/logo/logo.png" alt="Sparks Occupational Therapy" class="footer-logo">
+      </a>
+      <nav aria-label="Footer navigation">
+        <ul role="list">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="team.html">Team</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </nav>
+      <div>
+        <p class="footer-address">3015 47th Street, Suite E4 &middot; Boulder, CO 80301</p>
+        <p class="footer-email"><a href="mailto:korrie@sparksot.com">korrie@sparksot.com</a></p>
+        <p class="footer-copy">&copy; 2025 Sparks Occupational Therapy</p>
+      </div>
+    </div>
+  </footer>
+
+  <script src="assets/js/main.js"></script>
+</body>
+</html>
